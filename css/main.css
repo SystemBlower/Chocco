@@ -341,7 +341,7 @@ img {
 
 .reviews-section {
   position: relative;
-  background: url("../img/bg/half-leaf-bg.png") left bottom 20% no-repeat 102px 321px;
+  background: url("../img/bg/half-leaf-bg.png") left bottom 20% no-repeat;
 }
 .reviews-section::before {
   content: url("../img/decor/strawberry.png");
