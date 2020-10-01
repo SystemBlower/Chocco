@@ -1,9 +1,9 @@
 .order-section {
   position: relative;
-  background: url("../../img/bg/order-bg.png");
+  background: url("../img/bg/order-bg.png");
 
   &::before {
-    content: url("../../img/decor/single-leaf.png");
+    content: url("../img/decor/single-leaf.png");
     position: absolute;
     bottom: 0;
     right: 0;
@@ -11,7 +11,7 @@
   }
 
   &::after{
-    content: url("../../img/decor/berry.png");
+    content: url("../img/decor/berry.png");
     position: absolute;
     left: 0;
     bottom: 0;
