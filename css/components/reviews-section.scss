@@ -1,0 +1,15 @@
+.reviews-section{
+position: relative;
+background: url("../../img/bg/half-leaf-bg.png") left bottom 20% no-repeat 102px 321px;
+
+  &::before{
+    content: url("../../img/decor/strawberry.png");
+    position: absolute;
+    right: 0;
+    top: 0%;
+  }
+
+  &::after{
+
+  }
+}
