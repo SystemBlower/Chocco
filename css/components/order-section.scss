@@ -3,17 +3,34 @@
   background: url("../img/bg/order-bg.png");
 
   &::before {
-    content: url("../img/decor/single-leaf.png");
+    content: "";
+    background-image: url("../img/decor/single-leaf.png") ;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    
+
+    background-size: cover;
+    bottom: 100px;
+    right: 5%;
+    width: 135px;
+    height: 188px;
+    background-repeat: no-repeat;
+    @include tablets{
+      display: none;
+    }
+
   }
 
-  &::after{
-    content: url("../img/decor/berry.png");
+  &::after {
+    content: "";
+    background-image: url("../img/decor/berry.png");
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 5%;
+    bottom: 8%;
+    width: rem(47px);
+    height: rem(48px);
+    background-size: cover;
+    
+    @include tablets{
+      display: none;
+    }
   }
 }

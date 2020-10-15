@@ -1,36 +1,65 @@
 .benefit {
-  text-align: center;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+  
+  @include phones {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+  }
 }
 .benefit__image{
-  margin-bottom: 22px;
+  width: 3.55556rem;
+    height: 3.77778rem;
+    fill: #292929;
+//   margin-bottom: rem(22px);
+
+//   @include phones{
+//     margin-bottom: 0;
+//     margin-right: rem(20px);
+//   }
 }
 .benefit__image-wrapper {
-  display: inline-block;
-  width: 128px;
-  height: 128px;
-  position: relative;
+  display: flex;
+  width: rem(128px);
+  height: rem(128px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: rem(22px);
+
+  @include phones{
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
 
+
 .benefit__icon {
-  width: 65px;
-  height: 68px;
+  width: rem(65px);
+  height: rem(68px);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 }
 
 .benefit__title {
   font-weight: bold;
-  font-size: 27px;
-  line-height: 32px;
-  margin-bottom: 18px;
+  font-size: rem(27px);
+  line-height: rem(32px);
+  margin-bottom: rem(18px);
 }
 .benefit__desc{
   font-weight: 300;
-font-size: 18px;
-line-height: 22px;
+font-size: rem(18px);
+line-height: rem(22px);
 }

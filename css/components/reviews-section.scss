@@ -3,10 +3,14 @@ position: relative;
 background: url("../img/bg/half-leaf-bg.png") left bottom 20% no-repeat;
 
   &::before{
-    content: url("../img/decor/strawberry.png");
+    content: "";
+    background-image: url("../img/decor/strawberry.png");
     position: absolute;
     right: 0;
     top: 0%;
+    width: 136px;
+    height: 78px;
+    background-size: cover;
   }
 
   &::after{

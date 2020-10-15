@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: rem(21px);
+  line-height: rem(24px);
+  
+  @include phones {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+}
+
+.contacts__desc {
+  // font-size: rem(21px);
+  // line-height: rem(24px);
+
+
+}
+
+.contacts__phone{
+  color: $darkGreen;
+}

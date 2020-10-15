@@ -1,7 +1,7 @@
 .reviews__display {
   background: #F8FAF9 url("../img/decor/blackberry.png") right top no-repeat;
-  padding: 50px 45px 30px;
-  margin-bottom: 20px;
+  padding: rem(50px) rem(45px) rem(30px);
+  margin-bottom: rem(20px);
   overflow: hidden;
   position: relative;
 
@@ -9,23 +9,34 @@
     content: "";
     display: block;
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
-  width: 253px;
-  height: 264px;
+  width: rem(253px);
+  height: rem(264px);
+  
+  @include tablets{
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__avatar-img {
@@ -36,27 +47,31 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
-  margin-top: 12px;
+  margin-left: rem(20px);
+  margin-top: rem(12px);
 }
 
 .reviews__title {
-  font-size: 30px;
-  line-height: 32px;
+  font-size: rem(30px);
+  line-height: rem(32px);
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
   color: #292929;
 
 }
 
 .reviews__text {
-  margin-bottom: 30px;
-  line-height: 22px;
+  margin-bottom: rem(30px);
+  line-height: rem(22px);
   padding: 0 23% 0 0;
+
+  @include tablets{
+    padding: 0%;
+  }
 }
 
 .reviews__author {
-  line-height: 24px;
+  line-height: rem(24px);
   font-weight: 500;
   color: #292929;
 }

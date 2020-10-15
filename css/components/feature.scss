@@ -1,13 +1,15 @@
 
 .feature{
   display: flex;
+  align-items: center;
 }
 .feature__icon{
-  width: 45px;
-  margin-right: 7px;
+  width: rem(45px);
+  margin-right: rem(7px);
+  fill: white;
 }
 
 .feature__text{
-  font-size: 16px;
-  max-width: 75px;
+  font-size: rem(16px);
+  max-width: rem(75px);
 }

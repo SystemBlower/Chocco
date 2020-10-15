@@ -1,0 +1,14 @@
+.socials__list{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.socials__icon{
+  width: rem(20px);
+  height: rem(20px);
+  fill: #b3b3b3;
+  transition: .5s;
+  &:hover{
+    fill: black;
+  }
+}
