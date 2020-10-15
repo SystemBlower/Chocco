@@ -134,7 +134,7 @@ img {
     content: "";
     width: 19.6177777778rem;
     height: 20.3977777778rem;
-    background: url("../../img/decor/chocolates-with-berries.png") center center/contain no-repeat;
+    background: url("../img/decor/chocolates-with-berries.png") center center/contain no-repeat;
     margin-bottom: 1.1111111111rem;
   }
 }
@@ -810,7 +810,7 @@ img {
 }
 
 .map {
-  background: url("../../img/bg/map.png") 50%/cover no-repeat;
+  background: url("../img/bg/map.png") 50%/cover no-repeat;
   height: 100%;
   flex-grow: 1;
 }
