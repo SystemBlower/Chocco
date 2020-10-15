@@ -3,6 +3,8 @@
   flex-direction: column;
   font-size: rem(21px);
   line-height: rem(24px);
+  font-style: normal;
+  color: black;
   
   @include phones {
     margin-bottom: 10px;
@@ -23,3 +25,10 @@
 .contacts__phone{
   color: $darkGreen;
 }
+.contacts__icon{
+  width: rem(12px);
+  height: rem(12px);
+  fill: $darkGreen;
+  margin-right: 5px;
+}
+

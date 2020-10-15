@@ -2,6 +2,16 @@
   display: flex;
   justify-content: space-between;
   flex: 1;
+  margin-right: -10px;
+}
+
+.socials__item{
+  margin-right: 20px;
+  margin-top: 15px;
+
+  &:last-child{
+    margin-right: 0;
+  }
 }
 .socials__icon{
   width: rem(20px);

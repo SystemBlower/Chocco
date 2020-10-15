@@ -467,6 +467,7 @@ img {
   font-size: 1.5rem;
   line-height: 1.7777777778rem;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .benefit__desc {
@@ -614,7 +615,7 @@ img {
   position: absolute;
   background-size: cover;
   bottom: 100px;
-  right: 5%;
+  right: 0%;
   width: 135px;
   height: 188px;
   background-repeat: no-repeat;
@@ -628,7 +629,7 @@ img {
   content: "";
   background-image: url("../img/decor/berry.png");
   position: absolute;
-  left: 5%;
+  left: 2%;
   bottom: 8%;
   width: 2.6111111111rem;
   height: 2.6666666667rem;
@@ -848,6 +849,8 @@ img {
   flex-direction: column;
   font-size: 1.1666666667rem;
   line-height: 1.3333333333rem;
+  font-style: normal;
+  color: black;
 }
 @media screen and (max-width: 480px) {
   .contacts {
@@ -862,10 +865,26 @@ img {
   color: #0b4d3c;
 }
 
+.contacts__icon {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  fill: #0b4d3c;
+  margin-right: 5px;
+}
+
 .socials__list {
   display: flex;
   justify-content: space-between;
   flex: 1;
+  margin-right: -10px;
+}
+
+.socials__item {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.socials__item:last-child {
+  margin-right: 0;
 }
 
 .socials__icon {
