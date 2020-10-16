@@ -13,6 +13,10 @@
   @include phones {
     padding: 0;
     margin-bottom: rem(22px);
+    
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   &:before {

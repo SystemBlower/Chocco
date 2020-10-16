@@ -259,6 +259,8 @@ img {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
+    position: fixed;
+    right: 3%;
   }
 }
 
@@ -392,6 +394,9 @@ img {
   .benefits__item {
     padding: 0;
     margin-bottom: 1.2222222222rem;
+  }
+  .benefits__item:last-child {
+    margin-bottom: 0;
   }
 }
 .benefits__item:before {
@@ -572,6 +577,11 @@ img {
   flex: 1;
   margin-left: 1.1111111111rem;
   margin-top: 0.6666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
@@ -822,7 +832,7 @@ img {
   left: 0;
   right: 0;
   background: #fff;
-  padding: 1.1111111111rem 0 0.8333333333rem 0;
+  padding: 0.5555555556rem 0 0.8333333333rem 0;
   flex-shrink: 1;
   display: flex;
 }
@@ -842,6 +852,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 
 .contacts {
@@ -881,7 +892,6 @@ img {
 
 .socials__item {
   margin-right: 20px;
-  margin-top: 15px;
 }
 .socials__item:last-child {
   margin-right: 0;
