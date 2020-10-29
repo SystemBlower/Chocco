@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHOCCO</title>
+ 
   <link rel="stylesheet" href="./css/main.css">
+
+
 </head>
 
 <body>
@@ -16,7 +19,7 @@
         <div class="container hero__container">
           <header class="header">
             <img src="./img/logo.png" class="logo" alt="CHOCCO logo">
-            <nav class="menu">
+            <nav class="menu menu--vertical">
               <ul class="menu__list">
                 <li class="menu__item">
                   <a href="#" class="menu__link">О нас</a></li>
@@ -42,7 +45,7 @@
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <a href="" class="hamburger">
+            <a href="" class="hamburger" id="burger">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -143,6 +146,199 @@
           </ul>
         </div>
       </section>
+      <section class="section variations-section">
+        <div class="container">
+          <div class="slider">
+            <div class="slider__arrows arrows">
+              <a href="#" class="arrows__left" id="left">
+                <svg class="arrows__icon">
+                  <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="slider__list" id="items">
+              <li class="slider__items variations" >
+                <div class="slider__content">
+                  <div class="variations__col">
+                  
+                    <div class="variations__img-wrap">
+                      <img src="./img/content/chocolates-slider.png" alt="candy" />
+                    </div>
+                   
+                  </div>
+                  <div class="variations__col">
+                    <div class="dropdown">
+                      <a href="#" class="dropdown__link">
+                        <svg class="dropdown__cursor">
+                          <use xlink:href="./img/icons/sprite.svg#chocolate-bar"></use>
+                        </svg>
+                        <p>Состав</p>
+                        <div class="dropdown__menu">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#grape"></use>
+                              </svg>
+                              <div class="dropdown__title">Виноград</div>
+                              <div class="dropdown__desc">25 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#nut"></use>
+                              </svg>
+                              <div class="dropdown__title">Грецкий орех</div>
+                              <div class="dropdown__desc">32 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                              </svg>
+                              <div class="dropdown__title">Кунжутное семя</div>
+                              <div class="dropdown__desc">20 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                              </svg>
+                              <div class="dropdown__title">Сухое молоко</div>
+                              <div class="dropdown__desc">10 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#apitherapy"></use>
+                              </svg>
+                              <div class="dropdown__title">Зам. сахара</div>
+                              <div class="dropdown__desc">4 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                              </svg>
+                              <div class="dropdown__title">Какао бобы</div>
+                              <div class="dropdown__desc">4 г</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="variations__content">
+                      <div class="variations__title">
+                        
+                        <span>Батончик “Гранола виноград”</span>
+                      </div>
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое
+                        молоко, заменитель сахара и какао бобы.
+                      </p>
+                      <div class="variations__info">
+                        <div class="variations__info-col">Калорийность <span>110 ккал</span></div>
+                        <div class="variations__info-col">Вес <span>95 грамм</span></div>
+                      </div>
+                      <div class="variations__order">
+                        <div class="variations__price">140 ₽</div>
+                        <div class="variations__btn btn btn--theme--green">ЗАКАЗАТЬ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__items variations">
+                <div class="slider__content">
+                  <div class="variations__col">
+                    
+                    <div class="variations__img-wrap">
+                      <img src="./img/content/chocolates-slider.png" alt="candy" />
+                    </div>
+                    
+                  </div>
+                  <div class="variations__col">
+                    <div class="dropdown">
+                      <a href="#" class="dropdown__link">
+                        <svg class="dropdown__cursor">
+                          <use xlink:href="./img/icons/sprite.svg#chocolate-bar"></use>
+                        </svg>
+                        <p>Состав</p>
+                        <div class="dropdown__menu">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#grape"></use>
+                              </svg>
+                              <div class="dropdown__title">Виноград</div>
+                              <div class="dropdown__desc">25 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#nut"></use>
+                              </svg>
+                              <div class="dropdown__title">Грецкий орех</div>
+                              <div class="dropdown__desc">32 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                              </svg>
+                              <div class="dropdown__title">Кунжутное семя</div>
+                              <div class="dropdown__desc">20 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                              </svg>
+                              <div class="dropdown__title">Сухое молоко</div>
+                              <div class="dropdown__desc">10 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#apitherapy"></use>
+                              </svg>
+                              <div class="dropdown__title">Зам. сахара</div>
+                              <div class="dropdown__desc">4 г</div>
+                            </li>
+                            <li class="dropdown__item">
+                              <svg class="dropdown__icon">
+                                <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                              </svg>
+                              <div class="dropdown__title">Какао бобы</div>
+                              <div class="dropdown__desc">4 г</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="variations__content">
+                      <div class="variations__title">
+                        
+                        <span>Батончик “Морские водоросли”</span>
+                      </div>
+                      <p>
+                        Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также
+                        входят: сухое молоко, заменитель сахара и какао бобы.
+                      </p>
+                      <div class="variations__info">
+                        <div class="variations__info-col">Калорийность <span>120 ккал</span></div>
+                        <div class="variations__info-col">Вес <span>98 грамм</span></div>
+                      </div>
+                      <div class="variations__order">
+                        <div class="variations__price">140 ₽</div>
+                        <div class="variations__btn btn btn--theme--green">ЗАКАЗАТЬ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="slider__arrows arrows">
+              <a href="#" class="arrows__right" id="right">
+                <svg class="arrows__icon">
+                  <use xlink:href="./img/icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
@@ -263,56 +459,61 @@
           </form>
         </div>
       </div>
+
       <section class="section map-section">
         <div class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <!-- <div class="footer__content"> -->
-            <div class="footer__col"> 
-            <address class="contacts">
-              <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
-              <a href="tel:+78009039090" class="contacts__phone phone-number">8 800 903 90 90</a>
-            </address>
+            <div class="footer__col">
+              <address class="contacts">
+                <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
+                <a href="tel:+78009039090" class="contacts__phone phone-number">
+                  <svg class="contacts__icon">
+                    <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                  </svg>
+                  8 800 903 90 90</a>
+              </address>
+            </div>
+            <div class="footer__col">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/icons/sprite.svg#insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                      <use xlink:href="./img/icons/sprite.svg#tw"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div>  -->
           </div>
-          <div class="footer__col">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a href="#" class="socials__link">
-                <svg class="socials__icon">
-                  <use xlink:href="./img/icons/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link">
-                <svg class="socials__icon">
-                  <use xlink:href="./img/icons/sprite.svg#fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link">
-                <svg class="socials__icon">
-                  <use xlink:href="./img/icons/sprite.svg#insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link">
-                <svg class="socials__icon">
-                  <use xlink:href="./img/icons/sprite.svg#tw"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          </div>
-           <!-- </div>  -->
+        </footer>
+      </section>
+
+
     </div>
-    </footer>
-    </section>
-
-
-  </div>
   </div>
 
   <nav class="fixed-menu">
@@ -346,6 +547,20 @@
       </li>
     </ul>
   </nav>
+
+  <div class="nav__burger" id="nav__burger">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Батончики</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Контакты </a></li>
+    </ul>
+  </div>
+  <script src="./js/burger-menu.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
