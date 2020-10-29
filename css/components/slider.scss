@@ -1,0 +1,25 @@
+.slider{
+  display: flex;
+
+  &__list{
+    display: flex;
+    overflow: hidden;
+
+    transition: .5s all ease-out;
+  }
+}
+
+
+.slider__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets{
+    flex-direction: column;
+  }
+}
+
+.slider__item{
+  
+}

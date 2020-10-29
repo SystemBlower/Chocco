@@ -40,6 +40,12 @@ $z-fixed-menu:100;
 
 @import "components/position-relative";
 
+@import "components/variations-section";
+@import "components/slider";
+@import "components/arrows";
+@import "components/variations";
+@import "components/dropdown";
+
 @import "components/reviews-section";
 @import "components/reviews";
 @import "components/order-section";
@@ -54,5 +60,6 @@ $z-fixed-menu:100;
 @import "components/socials";
 
 @import "components/fixed-menu";
+@import "components/nav";
 
 

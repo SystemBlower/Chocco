@@ -1,4 +1,5 @@
 .btn {
+  display: inline-block;
   font-size: rem(19px);
   font-weight: 800;
   padding: rem(21px) rem(41px);
@@ -7,7 +8,7 @@
   line-height: 1;
   text-decoration: none;
   border: none;
-
+  cursor: pointer;
 
   &--theme--white {
     background: #fff;

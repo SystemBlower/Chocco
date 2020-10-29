@@ -1,0 +1,46 @@
+.arrows{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  @include tablets{
+    
+    
+  }
+
+  
+  &__left{
+    display: block;
+    position: absolute;
+    transform: rotate(180deg) translateY(50%);
+    @include tablets{
+      
+      top: 28%;
+      left: 16%;
+    
+    }
+    
+    @include phones{
+      top: 22%;
+    }
+  }
+
+  &__right{
+    position: absolute;
+    right: -2%;
+    @include tablets{
+    right: 18%;
+    top: 26%;
+    }
+    @include phones{
+      top: 20%;
+    }
+  }
+
+  &__icon{
+    width: .75rem;
+    height: 1.5rem;
+  }
+
+  
+}
