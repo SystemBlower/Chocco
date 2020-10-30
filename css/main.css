@@ -905,6 +905,174 @@ img {
   height: 78px;
   background-size: cover;
 }
+.acc-section {
+  position: relative;
+  background: url("../../img/bg/acc-bg.png") 50% no-repeat;
+  background-size: cover;
+}
+
+.acc-section:before {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.acc-section-container {
+  height: 70%;
+}
+
+.acc__wrapper-title {
+  display: flex;
+}
+
+.acc__title {
+  font-weight: 700;
+  font-size: 2.66667rem;
+  line-height: 3.22222rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.acc__list {
+  width: 100%;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.acc__item,
+.acc__list {
+  display: flex;
+  height: 100%;
+}
+
+.acc__item {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .acc__item-active {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+.acc__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 2.66667rem;
+  line-height: 3.22222rem;
+  color: #fff;
+  width: 5.66667rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.acc__link-bg-one {
+  background: url("../../img/bg/acc-bg-inner-1.png") 50%/cover no-repeat;
+}
+
+.acc__link-bg-one:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background: #000;
+}
+
+.acc__link-bg-two {
+  background: url("../../img/bg/acc-bg-inner-2.png") 50%/cover no-repeat;
+}
+
+.acc__link-bg-two:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background: #000;
+}
+
+.acc__link-bg-three {
+  background: url("../../img/bg/acc-bg-inner-3.png") 50%/cover no-repeat;
+}
+
+.acc__link-bg-three:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+}
+
+.acc__link > span {
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  display: block;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.acc__content {
+  opacity: 0;
+  width: 0;
+  background: rgba(51, 53, 55, 0.9);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  .acc__content {
+    transition: none;
+  }
+}
+
+.acc__content_active {
+  opacity: 1;
+  width: 0;
+  visibility: visible;
+}
+
+.acc__box {
+  padding: 30px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.acc__content-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.acc__icon {
+  width: 0.83333rem;
+  height: 0.83333rem;
+  fill: #666;
+}
+
+.acc__text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
 .reviews__display {
   background: #F8FAF9 url("../img/decor/blackberry.png") right top no-repeat;
   padding: 2.7777777778rem 2.5rem 1.6666666667rem;
