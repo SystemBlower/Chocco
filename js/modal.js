@@ -1,21 +1,4 @@
-
-
-const validateFields = (form, fieldsArray) => {
-
-    fieldsArray.forEach((field) => {
-        field.removeClass("input-error");
-        if (field.val().trim() == "") {
-            field.addClass("input-error");
-        }
-
-    });
-
-    const errorFields = form.find(".input-error");
-    
-    return errorFields.length == 0;
-}
-
-$('.form').submit((e) => {
+$(".form").submit( e => {
     e.preventDefault();
 
     const form = $(e.currentTarget);
@@ -23,17 +6,15 @@ $('.form').submit((e) => {
     const phone = form.find("[name='phone']");
     const comment = form.find("[name='comment']");
     const to = form.find("[name='to']");
+    const formArr = [name,phone,comment];
+    const modal = $(".modal");
+    const content = modal.find(".modal__title");
 
-    const modal = $("#modal");
-    const content = modal.find(".modal__content");
+    content.removeClass("error-modal");
 
-    modal.removeClass("error-modal")
+    const isValid = validateFields(form,formArr)
 
-    const isValid = validateFields(form, [name, phone, comment, to]);
-
-
-
-    if (isValid) {
+    if(isValid) {
         $.ajax({
             url: "https://webdev-api.loftschool.com/sendmail",
             method: "post",
@@ -43,30 +24,47 @@ $('.form').submit((e) => {
                 comment: comment.val(),
                 to: to.val(),
             },
-            succes: data => {
-                content.text(data.message)
-                // console.log(data);
+
+            success: (data) => {
+                console.log(data);
+                content.text(data.message);
+
                 $.fancybox.open({
                     src: "#modal",
-                    type: "inline",
+                    type: "inline"
                 });
+                
+                $(".form")[0].reset();
             },
             error: data => {
                 const message = data.responseJSON.message;
                 content.text(message);
-                modal.addClass("error-modal")
-                
+                content.addClass("error-modal");
+
                 $.fancybox.open({
                     src: "#modal",
-                    type: "inline",
+                    type: "inline"
                 });
-            }
+            },
         });
     }
 });
 
-$(".app-submit-btn").click((e)=> {
+const validateFields = (form, arr) => {
+    arr.forEach((field) => {
+        field.removeClass("input-error");
+        if(field.val().trim() === "") {
+            field.addClass("input-error");
+        }
+    });
+
+    const errorfield = form.find(".input-error");
+
+    return errorfield.length === 0;
+}
+
+$(".app-close-modal").click(e => {
     e.preventDefault();
 
     $.fancybox.close();
-});
+})
