@@ -1355,19 +1355,26 @@ img {
 }
 
 .modal__content {
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.11111rem 0;
+  padding: 1.11111rem 1rem;
   color: black;
 }
 
 .modal__container {
-  background: #fff;
   padding: 1.9444444444rem 3.3333333333rem;
   flex-direction: column;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .modal__title {
