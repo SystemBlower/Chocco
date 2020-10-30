@@ -907,7 +907,7 @@ img {
 }
 .acc-section {
   position: relative;
-  background: url("../../img/bg/acc-bg.png") 50% no-repeat;
+  background: url("../img/bg/acc-bg.png") 50% no-repeat;
   background-size: cover;
 }
 
@@ -978,7 +978,7 @@ img {
 }
 
 .acc__link-bg-one {
-  background: url("../../img/bg/acc-bg-inner-1.png") 50%/cover no-repeat;
+  background: url("../img/bg/acc-bg-inner-1.png") 50%/cover no-repeat;
 }
 
 .acc__link-bg-one:before {
@@ -991,7 +991,7 @@ img {
 }
 
 .acc__link-bg-two {
-  background: url("../../img/bg/acc-bg-inner-2.png") 50%/cover no-repeat;
+  background: url("../img/bg/acc-bg-inner-2.png") 50%/cover no-repeat;
 }
 
 .acc__link-bg-two:before {
@@ -1004,7 +1004,7 @@ img {
 }
 
 .acc__link-bg-three {
-  background: url("../../img/bg/acc-bg-inner-3.png") 50%/cover no-repeat;
+  background: url("../img/bg/acc-bg-inner-3.png") 50%/cover no-repeat;
 }
 
 .acc__link-bg-three:before {
