@@ -3,7 +3,7 @@ const navBurger = document.querySelector(".nav__burger");
 const link = document.querySelectorAll(".nav__link");
 const body = document.querySelector("body");
 
-link.forEach(function (elem){
+link.forEach(elem =>{
     elem.addEventListener("click",toggleMenu);
 })
 
