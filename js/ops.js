@@ -1,7 +1,10 @@
 const sections = $("section");
 const display = $(".main-content");
 const sideMenu = $(".fixed-menu");;
-const menuItems = sideMenu.find(".fixed-menu__item")
+const menuItems = sideMenu.find(".fixed-menu__item");
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);//не определяет метод?
+const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
@@ -121,6 +124,7 @@ $(window).on("keydown", e => {
   }
 
 });
+$("wrapper").on("touchmove", e => e.preventDefault());
 
 $("[data-scroll-to]").click(e => {
   e.preventDefault();
@@ -133,7 +137,8 @@ $("[data-scroll-to]").click(e => {
 
 });
 
-// https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+if(isMobile){
+  // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 $("body").swipe( {
   
   swipe:function(
@@ -147,5 +152,6 @@ $("body").swipe( {
 
       scroller[scrollDirection]();
       
-  }
+  },
 });
+}
