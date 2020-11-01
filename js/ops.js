@@ -146,6 +146,6 @@ $("body").swipe( {
       if(direction == "down") scrollDirection = "prev";
 
       scroller[scrollDirection]();
-      alert(direction);
+      
   }
 });
