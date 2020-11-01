@@ -89,7 +89,7 @@ img {
 .hero {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: white;
   position: relative;
@@ -343,7 +343,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -1591,6 +1591,44 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed .fixed-menu__list .fixed-menu__item--active .fixed-menu__link {
+  border-color: black;
+}
+
+.fixed-menu--shadowed {
+  color: black;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  color: black;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link::before {
+  background: black;
+}
+
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link:hover {
+  border-color: #000;
+}
+
+.fixed-menu--shadowed {
+  color: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__link:hover {
+  border-color: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__link:before {
+  background-color: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
+
+.fixed-menu__link:hover {
+  border-color: white;
 }
 
 .nav {
